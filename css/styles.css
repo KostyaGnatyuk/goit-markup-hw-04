@@ -340,6 +340,43 @@ letter-spacing: 0.03em;
 color: var(--additional-text-color);
 margin: 0;
 }
+.client-box {
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client-box-list {
+    display: flex;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.client-box-item {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    margin: 0;
+    padding: 16px 32px;
+}
+
+.client-box-item:not(:last-child) {
+    margin-right: 30px;
+}
+.client-button {
+width: 106px;
+height: 60px;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+object-fit: cover;
+border: none;
+background-color: inherit;
+padding: 0;
+margin: 0;
+cursor: pointer;
+}
 .button-list {
 display: flex;
 justify-content: center;

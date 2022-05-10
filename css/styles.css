@@ -358,16 +358,18 @@ margin: 0;
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
+    border-radius: 2px;
     margin: 0;
     padding: 16px 32px;
+    max-width: 170px;
+    max-height: 92px;
 }
-
 .client-box-item:not(:last-child) {
     margin-right: 30px;
 }
 .client-button {
-width: 106px;
-height: 60px;
+width: 170px;
+height: 92px;
 background-repeat: no-repeat;
 background-position: 50% 50%;
 object-fit: cover;
@@ -376,6 +378,12 @@ background-color: inherit;
 padding: 0;
 margin: 0;
 cursor: pointer;
+}
+.svg {
+fill: #afb1b8;
+}
+.svg:hover {
+fill: #2196f3;
 }
 .button-list {
 display: flex;

@@ -258,18 +258,6 @@ color: var(--additional-text-color);
 margin: 0 auto;
 min-width: 270px;
 }
-.svg-header {
-width: 270px;
-height: 120px;
-background-color: #F5F4FA;
-margin-bottom: 30px;
-padding: 25px 100px;
-cursor: pointer;
-}
-.header-icon {
-width: 70px;
-height: 70px;
-}
 .class-box {
 padding-top: 94px;
 padding-bottom: 94px;
@@ -500,7 +488,7 @@ margin-top: 9px;
     border-radius: 50%;
     margin: 0;
     padding: 0;
-    max-width: 44px;
+    width: 44px;
     max-height: 44px;
 }
 .button-bot-item:not(:last-child) {
@@ -557,9 +545,19 @@ border-radius: 50%;
 width: 44px;
 height: 44px;
 }
-.employee-button:hover {
-background-color: #2196f3;
+.employee-link-svg {
+width: 20px;
+height: 20px;
+fill: #afb1b8;
+}
+.employee-svg:hover,
+.employee-svg:focus {
 fill: #FFFFFF;
+background-color: #2196F3;
+}
+.employee-link-svg:hover {
+fill: #FFFFFF;
+background-color: #2196f3;
 }
 .employee-svg {
 width: 20px;
@@ -578,4 +576,85 @@ fill: #2196F3;
 }
 .bot-first {
 margin-right: 70px;
+}
+.header-svg {
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    object-fit: cover;
+    background-size: 70px;
+    cursor: pointer;
+}
+.antenna {
+background-image: url('../hw1-images/antenna.svg');
+}
+.clock {
+background-image: url('../hw1-images/clock.svg');
+}
+.diagram {
+background-image: url('../hw1-images/diagram.svg');
+}
+.astronaut {
+background-image: url('../hw1-images/astronaut.svg');
+}
+
+
+
+.test-list {
+    width: 206px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.test-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+}
+.test-item:hover {
+background-color: tomato;
+}
+.test-item:not(:last-child) {
+    margin-right: 10px;
+}
+.test-svg {
+    fill: #FFFFFF;
+    width: 20px;
+    height: 20px;
+}
+.test-link-svg:hover,
+.test-link-svg:focus {
+    background-color: #2196f3;
+    fill: #FFFFFF;
+}
+.test-svg:hover,
+.test-svg:focus {
+    fill: #FFFFFF;
+}
+.test-link-svg {
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    object-position: 50% 50%;
+    object-fit: contain;
+    fill: gray;
+    background-position: 50%;
 }

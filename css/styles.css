@@ -208,7 +208,7 @@ padding: 6px 22px;
 color: var(--button-color);
 background-color: var(--focus-color);
 cursor: pointer;
-box-shadow: 0px 4px 4px 0 gray;
+box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .header-list {
 display: flex;
@@ -325,6 +325,7 @@ border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 margin: 0;
+background-color: #FFFFFF;
 }
 .team-box-item:not(:last-child) {
     margin-right: 30px;
@@ -370,7 +371,7 @@ margin: 0;
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
-    border-radius: 2px;
+    border-radius: 4px;
     margin: 0;
     padding: 16px 32px;
     max-width: 170px;
@@ -380,8 +381,6 @@ margin: 0;
     margin-right: 30px;
 }
 .client-button {
-width: 170px;
-height: 92px;
 background-repeat: no-repeat;
 background-position: 50% 50%;
 object-fit: cover;
@@ -391,11 +390,19 @@ padding: 0;
 margin: 0;
 cursor: pointer;
 }
-.svg {
-fill: #afb1b8;
+.client-box-item:hover,
+.client-box-item:focus {
+border-color: #2196F3;
+fill: #2196F3;
 }
 .svg:hover {
-fill: #2196f3;
+fill: inherit;
+}
+.svg {
+fill: #afb1b8;
+width: 106px;
+height: 60px;
+background-position: 50% 50%;
 }
 .button-list {
 display: flex;
@@ -441,8 +448,10 @@ margin-bottom: 0;
 .portfolio-list-item:not(:nth-child(3n)){
 margin-right: 30px;
 }
-.portfolio-list-item:hover {
-box-shadow: 0px 4px 4px 0px gray;
+.portfolio-list-item:hover,
+.portfolio-list-item:focus
+ {
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 .portfolio-block {
 border: 1px solid #EEEEEE;
@@ -514,10 +523,12 @@ margin-top: 9px;
     width: 20px;
     height: 20px;
 }
-.bot-button:hover {
+.bot-button:hover,
+.bot-button:focus {
 background-color: #2196f3;
 }
-.bot-svg:hover {
+.bot-svg:hover,
+.bot-svg:focus {
 fill: #FFFFFF;
 }
 .bot-text {
@@ -527,8 +538,6 @@ line-height: 1.14;
 letter-spacing: 3%;
 text-transform: uppercase;
 }
-
-
 .employee-contacts {
 display: flex;
 align-items: center;
@@ -555,6 +564,7 @@ fill: #FFFFFF;
 .employee-svg {
 width: 20px;
 height: 20px;
+fill: #afb1b8;
 }
 .svg-contacts {
 width: 16px;
@@ -562,7 +572,8 @@ height: 12px;
 margin-right: 10px;
 fill: #757575;
 }
-.svg-contacts:hover {
+.svg-contacts:hover,
+.svg-contacts:focus {
 fill: #2196F3;
 }
 .bot-first {

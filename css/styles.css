@@ -355,15 +355,8 @@ margin: 0;
 }
 
 .client-box-item {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    margin: 0;
-    padding: 16px 32px;
-    max-width: 170px;
-    max-height: 92px;
+    width: 170px;
+    height: 92px;
 }
 .client-box-item:not(:last-child) {
     margin-right: 30px;
@@ -392,6 +385,31 @@ width: 106px;
 height: 60px;
 background-position: 50% 50%;
 }
+
+.media-icon {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+background-position: 50%;
+background-repeat: no-repeat;
+object-fit: cover;
+cursor: pointer;
+}
+.media-icon:hover,
+.media-icon:focus
+{
+border-color: #2196F3;
+fill: #2196F3;
+}
+
+
+
 .button-list {
 display: flex;
 justify-content: center;

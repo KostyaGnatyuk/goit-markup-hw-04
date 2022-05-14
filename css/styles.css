@@ -82,9 +82,6 @@ justify-content: flex-start;
 align-items: center;
 mar
 }
-.top-item {
-display: block;
-}
 .top-item:not(:last-child) {
 margin-right: 50px;
 }
@@ -116,10 +113,6 @@ letter-spacing: 0.02em;
 color: var(--additional-text-color); text-decoration: none;
 display: flex;
 align-items: center;
-}
-.contacts:hover,
-.contacts:focus {
-color: var(--focus-color);
 }
 .contacts-bottom {
 font-size: 14px;
@@ -346,14 +339,12 @@ margin: 0;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
 .client-box-list {
     display: flex;
     margin: 0;
     padding-left: 15px;
     padding-right: 15px;
 }
-
 .client-box-item {
     width: 170px;
     height: 92px;
@@ -361,31 +352,6 @@ margin: 0;
 .client-box-item:not(:last-child) {
     margin-right: 30px;
 }
-.client-button {
-background-repeat: no-repeat;
-background-position: 50% 50%;
-object-fit: cover;
-border: none;
-background-color: inherit;
-padding: 0;
-margin: 0;
-cursor: pointer;
-}
-.client-box-item:hover,
-.client-box-item:focus {
-border-color: #2196F3;
-fill: #2196F3;
-}
-.svg:hover {
-fill: inherit;
-}
-.svg {
-fill: #afb1b8;
-width: 106px;
-height: 60px;
-background-position: 50% 50%;
-}
-
 .media-icon {
 display: flex;
 justify-content: center;
@@ -400,6 +366,12 @@ background-position: 50%;
 background-repeat: no-repeat;
 object-fit: cover;
 cursor: pointer;
+fill: #afb1b8;
+background-position: 50% 50%;
+}
+.svg {
+width: 106px;
+height: 60px;
 }
 .media-icon:hover,
 .media-icon:focus
@@ -407,9 +379,6 @@ cursor: pointer;
 border-color: #2196F3;
 fill: #2196F3;
 }
-
-
-
 .button-list {
 display: flex;
 justify-content: center;
@@ -493,56 +462,13 @@ margin-top: 9px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-.button-bot-list {
-    display: flex;
-    margin: 0;
-}
-.button-bot-item {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50%;
-    margin: 0;
-    padding: 0;
-    width: 44px;
-    max-height: 44px;
-}
-.button-bot-item:not(:last-child) {
-    margin-right: 10px;
-}
-.bot-button {
-    width: 44px;
-    height: 44px;
-    border: none;
-    border-radius: 50%;
-    background-color: #4B4848;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    object-position: 50% 50%;
-    object-fit: contain;
-}
-.bot-svg {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
-}
-.bot-button:hover,
-.bot-button:focus {
-background-color: #2196f3;
-}
-.bot-svg:hover,
-.bot-svg:focus {
-fill: #FFFFFF;
-}
 .bot-text {
 font-style: bold;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 3%;
 text-transform: uppercase;
+margin: 0;
 }
 .employee-contacts {
 display: flex;
@@ -582,16 +508,6 @@ width: 20px;
 height: 20px;
 fill: #afb1b8;
 }
-.svg-contacts {
-width: 16px;
-height: 12px;
-margin-right: 10px;
-fill: #757575;
-}
-.svg-contacts:hover,
-.svg-contacts:focus {
-fill: #2196F3;
-}
 .bot-first {
 margin-right: 70px;
 }
@@ -620,59 +536,131 @@ background-image: url('../hw1-images/diagram.svg');
 background-image: url('../hw1-images/astronaut.svg');
 }
 
-
-
-.test-list {
-    width: 206px;
-    height: 44px;
-    display: inline-flex;
-    justify-content: space-around;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-top: 16px;
-    margin-bottom: 30px;
-}
-
-.test-item {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50%;
+.employee-contacts {
+    display: flex;
     margin: 0;
     padding: 0;
+}
+.employee-contacts-item {
+    width: 44px;
+    height: 44px;
+    margin-top: 16px;
+}
+.employee-contacts-item:not(:last-child) {
+    margin-right: 10px;
+}
+.employee-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border-radius: 50%;
+    border-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    cursor: pointer;
+    fill: #afb1b8;
+    background-position: 50% 50%;
+}
+.employee-svg {
+    width: 20px;
+    height: 20px;
+}
+.employee-link:hover,
+.employee-link:focus {
+    border-color: #2196F3;
+    fill: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.button-bot-list {
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+}
+.button-bot-item {
     width: 44px;
     height: 44px;
 }
-.test-item:hover {
-background-color: tomato;
-}
-.test-item:not(:last-child) {
+.button-bot-item:not(:last-child) {
     margin-right: 10px;
 }
-.test-svg {
-    fill: #FFFFFF;
-    width: 20px;
-    height: 20px;
-}
-.test-link-svg:hover,
-.test-link-svg:focus {
-    background-color: #2196f3;
-    fill: #FFFFFF;
-}
-.test-svg:hover,
-.test-svg:focus {
-    fill: #FFFFFF;
-}
-.test-link-svg {
-    width: 20px;
-    height: 20px;
+.bot-button {
+    width: 44px;
+    height: 44px;
     border: none;
-    padding: 0;
+    border-radius: 50%;
+    background-color: #4B4848;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-color: transparent;
     margin: 0;
-    cursor: pointer;
-    object-position: 50% 50%;
-    object-fit: contain;
-    fill: gray;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     background-position: 50%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    cursor: pointer;
+    fill: #afb1b8;
+}
+.bot-svg {
+    fill: #FFFFFF;
+    width: 20px;
+    height: 20px;
+}
+.bot-button:hover,
+.bot-button:focus {
+    background-color: #2196f3;
+}
+.bot-svg:hover,
+.bot-svg:focus {
+    fill: #FFFFFF;
+}
+.contacts-button:not(:last-child) {
+    margin-right: 30px;
+}
+.mail, .phone {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    margin: 0;
+    padding: 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    cursor: pointer;
+    fill: #afb1b8;
+    width: 100%;
+    height: 100%;
+}
+.svg-contacts {
+fill: var(--additional-text-color);
+margin-right: 10px;
+}
+.svg-mail {
+width: 16px;
+height: 12px;
+}
+.svg-phone {
+width: 10px;
+height: 16px;
+}
+.contacts:hover,
+.contacts:focus {
+    color: #2196f3;
+    fill: #2196F3;
+}
+.svg-contacts:hover,
+.svg-contacts:focus {
+    fill: #2196f3;
 }

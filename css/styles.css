@@ -176,6 +176,7 @@ line-height: 1.875;
 letter-spacing: 0.06em;
 color: var(--button-color);
 border-radius: 4px;
+border-color: transparent;
 width: 200px;
 padding-top: 10px;
 padding-bottom: 10px;
@@ -195,6 +196,7 @@ font-family: 'Roboto';
 display: inline-block;
 border-radius: 4px;
 padding: 6px 22px;
+border-color: transparent;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -385,6 +387,7 @@ justify-content: center;
 align-items: center;
 margin: 0 auto;
 margin-bottom: 50px;
+border-color: transparent;
 }
 .button-list-item:not(:last-child) {
 margin-right: 8px;
@@ -470,44 +473,6 @@ letter-spacing: 3%;
 text-transform: uppercase;
 margin: 0;
 }
-.employee-contacts {
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.employee-item {
-margin-right: 10px;
-margin-top: 10px;
-}
-.employee-button {
-background-color: inherit;
-border: none;
-fill: gray;
-cursor: pointer;
-border-radius: 50%;
-width: 44px;
-height: 44px;
-}
-.employee-link-svg {
-width: 20px;
-height: 20px;
-fill: #afb1b8;
-}
-.employee-svg:hover,
-.employee-svg:focus {
-fill: #FFFFFF;
-background-color: #2196F3;
-}
-.employee-link-svg:hover {
-fill: #FFFFFF;
-background-color: #2196f3;
-}
-.employee-svg {
-width: 20px;
-height: 20px;
-fill: #afb1b8;
-}
 .bot-first {
 margin-right: 70px;
 }
@@ -540,11 +505,15 @@ background-image: url('../hw1-images/astronaut.svg');
     display: flex;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
+    fill: rgba(175, 177, 184, 1);
 }
 .employee-contacts-item {
     width: 44px;
     height: 44px;
     margin-top: 16px;
+    fill: rgba(175, 177, 184, 1);
 }
 .employee-contacts-item:not(:last-child) {
     margin-right: 10px;
@@ -564,7 +533,7 @@ background-image: url('../hw1-images/astronaut.svg');
     background-repeat: no-repeat;
     object-fit: cover;
     cursor: pointer;
-    fill: #afb1b8;
+    fill: rgba(175, 177, 184, 1);
     background-position: 50% 50%;
 }
 .employee-svg {
@@ -573,11 +542,14 @@ background-image: url('../hw1-images/astronaut.svg');
 }
 .employee-link:hover,
 .employee-link:focus {
-    border-color: #2196F3;
     fill: #FFFFFF;
     background-color: #2196F3;
 }
-
+.employee-svg:hover,
+.employee-svg:focus {
+    fill: #FFFFFF;
+    background-color: #2196F3;
+}
 .button-bot-list {
     display: flex;
     padding: 0;
@@ -595,7 +567,7 @@ background-image: url('../hw1-images/astronaut.svg');
     height: 44px;
     border: none;
     border-radius: 50%;
-    background-color: #4B4848;
+    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,12 +584,13 @@ background-image: url('../hw1-images/astronaut.svg');
     fill: #afb1b8;
 }
 .bot-svg {
-    fill: #FFFFFF;
     width: 20px;
     height: 20px;
+    fill: #FFFFFF;
 }
 .bot-button:hover,
 .bot-button:focus {
+    fill: #FFFFFF;
     background-color: #2196f3;
 }
 .bot-svg:hover,
